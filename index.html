@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Check Airdrop Eligibility</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Claim $GRASS Airdrop</title>
     <!-- Bootswatch Zephyr -->
     <link href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.0/dist/zephyr/bootstrap.min.css" rel="stylesheet">
     <!-- FontAwesome -->
@@ -25,7 +25,7 @@
     </style>
 </head>
 <body>
-    <div class="container">
+    <div class="chakra-ui-light">
         <h1 class="text-center mb-4"><i class="fas fa-coins"></i> $GRASS Airdrop Eligibility Checker</h1>
         <div class="mb-3">
             <label for="wallets" class="form-label">Input Wallet Addresses (one per line):</label>
@@ -38,8 +38,8 @@
     </div>
 
     <script>
-        // Event listener untuk tombol 'Check Eligibility'
-        document.getElementById('checkEligibility').addEventListener('click', async function() {
+        // Event listener untuk tombol 'Connect Wallet'
+        document.getElementById('ConnectWallet').addEventListener('click', async function() {
             const walletAddresses = document.getElementById('wallets').value.trim().split("\n").filter(addr => addr.trim() !== "");
             const resultDiv = document.getElementById('result');
             resultDiv.innerHTML = ""; // Bersihkan hasil sebelumnya
